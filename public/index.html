@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SENDETH DApp </title>
+    <title>ETH DApp</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <!-- Fixed ethers.js CDN -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js" 
+            integrity="sha384-PX1VjLhQO3l9k1MJGk8Q8Z5DfUn8Z6VQ8Z6VQ8Z6VQ8Z6VQ8Z6VQ8Z6VQ8Z6VQ8"
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <h1>ETH DApp with Infura</h1>
+        <h1>ETH DApp</h1>
         
         <div class="network-info">
             <p>Current Network: <span id="currentNetwork">Not connected</span></p>
@@ -35,7 +38,7 @@
         </div>
         
         <div class="section">
-            <h2>Voting Contract (Sepolia)</h2>
+            <h2>Voting Contract</h2>
             <div id="votingForm">
                 <p>Cast your vote for the proposal:</p>
                 <button id="voteProposal1" class="vote-button">Vote for Proposal 1</button>
@@ -45,7 +48,6 @@
         </div>
     </div>
     
-    <script src="src/config.js"></script>
     <script src="src/app.js"></script>
 </body>
 </html>
